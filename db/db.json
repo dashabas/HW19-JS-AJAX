@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "buy milk",
+      "status": true
+    },
+    {
+      "task": "buy coffee",
+      "status": false,
+      "id": 2
+    },
+    {
+      "task": "buy sugar",
+      "status": true,
+      "id": 3
+    },
+    {
+      "task": "buy blueberry",
+      "status": false,
+      "id": 5
+    },
+    {
+      "task": "buy flowers",
+      "status": false,
+      "id": 6
+    }
+  ]
+}

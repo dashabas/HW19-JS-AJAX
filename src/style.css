@@ -1,0 +1,11 @@
+.in-progress{
+    background-color: yellow;
+}
+.done{
+    background-color: green;
+}
+li{
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
