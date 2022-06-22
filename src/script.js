@@ -124,7 +124,7 @@ class TodoList {
     async getTodos() {
         try {
             this.todos = await getJSON();
-            await this.renderTodos(this.todos);
+            this.renderTodos(this.todos);
             return this.todos;
         } catch (error) {
             console.warn(error);
@@ -155,7 +155,7 @@ class TodoList {
             })
             let newTodo = await createJSON(todo);
             this.todos.push(newTodo);
-            await this.renderTodos(this.todos);
+            this.renderTodos(this.todos);
         } catch (error) {
             console.warn(error);
         }
@@ -169,7 +169,7 @@ class TodoList {
                 task: this.todos[index].task,
                 status: !!this.todos[index].status
             }));
-            await this.renderTodos(this.todos);
+            this.renderTodos(this.todos);
         } catch (error) {
             console.warn(error);
         }
