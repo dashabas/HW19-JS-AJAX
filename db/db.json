@@ -12,7 +12,7 @@
     },
     {
       "task": "buy sugar",
-      "status": true,
+      "status": false,
       "id": 3
     },
     {
@@ -22,8 +22,13 @@
     },
     {
       "task": "buy flowers",
-      "status": false,
+      "status": true,
       "id": 6
+    },
+    {
+      "task": "buy water",
+      "status": false,
+      "id": 8
     }
   ]
 }
