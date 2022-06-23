@@ -132,20 +132,17 @@ class TodoList {
     }
 
     renderTodos(todos = []) {
-        try {
-            let list = '';
-            for (let element of todos) {
-                if (!element) {
-                    return;
-                }
-                let status = !element.status ? 'in-progress' : 'done';
-                list += `<li class="${status}" data-id="${element.id}">${element.task}<button data-action="change-status">Change status</button><button data-action="delete-task">Delete</button></li>`;
+        let list = '';
+        for (let element of todos) {
+            if (!element) {
+                return;
             }
-            this.list.innerHTML = list;
-        } catch (error) {
-            console.warn(error);
+            let status = !element.status ? 'in-progress' : 'done';
+            list += `<li class="${status}" data-id="${element.id}">${element.task}<button data-action="change-status">Change status</button><button data-action="delete-task">Delete</button></li>`;
         }
+        this.list.innerHTML = list;
     }
+
 
     async addTodo() {
         try {
